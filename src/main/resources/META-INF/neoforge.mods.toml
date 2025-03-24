@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="All Rights Reserved"
+issueTrackerURL="https://discord.com/invite/aUX4MX7BAJ"
+
+[[mods]]
+modId="marbledsfirstaid"
+version="1.1.0.0"
+displayName="Marbled's First Aid"
+displayURL="https://www.marbledhubb.com/marbleds-first-aid/marbleds-first-aid-overview"
+logoFile="firstaidicon.png"
+credits="MarbledNull, MarbledHubb Beta Testers, My Premium members, GitHub contributors"
+authors="MarbledNull"
+description='''A mod that adds sorts of first aid items, medicines, and syringes'''
+
+[[dependencies.marbledsfirstaid]]
+    modId="neoforge"
+    type="required"
+    versionRange="${neo_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.marbledsfirstaid]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
