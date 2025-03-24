@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:string"
+
+  },
+  "result": {
+    "id": "marbledsfirstaid:cloth",
+    "count": 1
+  }
+}

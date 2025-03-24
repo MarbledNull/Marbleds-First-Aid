@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##P",
+        "##P"
+    ],
+    "key": {
+        "#": "minecraft:white_wool",
+        "P": "marbledsfirstaid:cloth"
+    },
+    "result": {
+        "id": "marbledsfirstaid:bandages",
+        "count": 1
+    }
+}

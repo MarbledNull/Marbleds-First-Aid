@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "IFI",
+    " I "
+  ],
+  "key": {
+    "#": "minecraft:poppy",
+    "I": "minecraft:iron_nugget",
+    "F": "minecraft:fermented_spider_eye"
+
+  },
+  "result": {
+    "id": "marbledsfirstaid:pain_pills",
+    "count": 1
+  }
+}

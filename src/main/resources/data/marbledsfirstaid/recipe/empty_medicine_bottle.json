@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#I#",
+    "# #",
+    " # "
+  ],
+  "key": {
+    "#": "minecraft:glass",
+    "I": "minecraft:iron_nugget"
+
+  },
+  "result": {
+    "id": "marbledsfirstaid:medicine_bottle",
+    "count": 1
+  }
+}

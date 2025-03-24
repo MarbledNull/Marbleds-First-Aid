@@ -1,0 +1,32 @@
+{
+  "medkit": {
+    "subtitles": "sounds.marbledsfirstaid.medkit",
+    "sounds": [
+      "marbledsfirstaid:medkit"
+    ]
+  },
+  "stim": {
+    "subtitles": "sounds.marbledsfirstaid.stim",
+    "sounds": [
+      "marbledsfirstaid:stim"
+    ]
+  },
+  "bandages": {
+    "subtitles": "sounds.marbledsfirstaid.bandages",
+    "sounds": [
+      "marbledsfirstaid:bandages"
+    ]
+  },
+  "eye_drops": {
+    "subtitles": "sounds.marbledsfirstaid.eye_drops",
+    "sounds": [
+      "marbledsfirstaid:eye_drops"
+    ]
+  },
+  "pain_pills": {
+    "subtitles": "sounds.marbledsfirstaid.pain_pills",
+    "sounds": [
+      "marbledsfirstaid:pain_pills"
+    ]
+  }
+}
