@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#P#",
+        "PWP",
+        "#P#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:leather"
+        },
+        "P": {
+            "item": "marbledsfirstaid:bandaid"
+        },
+        "W": {
+            "item": "marbledsfirstaid:morphine"
+        }
+    },
+    "result": {
+        "item": "marbledsfirstaid:medkit",
+        "count": 1
+    }
+}
