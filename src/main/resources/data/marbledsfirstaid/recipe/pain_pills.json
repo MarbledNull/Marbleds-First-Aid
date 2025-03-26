@@ -1,20 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#I#",
-    "# #",
-    " # "
+    " # ",
+    "IFI",
+    " I "
   ],
   "key": {
     "#": {
-      "item": "minecraft:glass"
+      "item": "minecraft:poppy"
     },
     "I": {
       "item": "minecraft:iron_nugget"
+    },
+    "F": {
+      "item": "minecraft:fermented_spider_eye"
     }
   },
   "result": {
-    "item": "marbledsfirstaid:medicine_bottle",
+    "id": "marbledsfirstaid:pain_pills",
     "count": 1
   }
 }
