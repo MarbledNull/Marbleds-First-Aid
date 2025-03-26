@@ -14,6 +14,7 @@
   "item.marbledsfirstaid.stimpack": "Stimpack",
   "item.marbledsfirstaid.pain_pills": "Pain Pills",
   "item.marbledsfirstaid.adrenaline_syringe": "Adrenaline Syringe",
+  "item.marbledsfirstaid.morphine_syringe": "Morphine Syringe",
   "item.marbledsfirstaid.antidote": "Antidote",
   "item.marbledsfirstaid.awkward_medicine_bottle": "Awkward Medicine Bottle",
 
@@ -36,6 +37,9 @@
   "item.marbledsfirstaid.adrenaline_syringe.desc2": "Speed (01:00)",
   "item.marbledsfirstaid.adrenaline_syringe.desc3": "Resistance (01:00)",
   "item.marbledsfirstaid.adrenaline_syringe.desc4": "Night Vision (01:00)",
+  "item.marbledsfirstaid.morphine_syringe.desc1": "When used:",
+  "item.marbledsfirstaid.morphine_syringe.desc2": "Speed (00:30)",
+  "item.marbledsfirstaid.morphine_syringe.desc3": "Regeneration (00:30)",
   "item.marbledsfirstaid.pain_pills.desc1": "When used:",
   "item.marbledsfirstaid.pain_pills.desc2": "Regeneration (00:15)",
   "item.marbledsfirstaid.pain_pills.desc3": "Absorption (00:30)",
@@ -49,5 +53,14 @@
   "item.marbledsfirstaid.water_medicine_bottle.desc1": "No effect",
   "item.marbledsfirstaid.awkward_medicine_bottle.desc1": "No effect",
   "item.marbledsfirstaid.omnicure.desc1": "When used:",
-  "item.marbledsfirstaid.omnicure.desc2": "Removes all negative effects"
+  "item.marbledsfirstaid.omnicure.desc2": "Removes all negative effects",
+
+  "advancements.marbleds_first_aid.root.title": "Marbled's First Aid",
+  "advancements.marbleds_first_aid.root.description": "Obtain one of First Aid's items",
+  "advancements.marbleds_first_aid.pills_here.title": "Pills Here!",
+  "advancements.marbleds_first_aid.pills_here.description": "Obtain Pain Pills",
+  "advancements.marbleds_first_aid.walking_er.title": "Walking ER",
+  "advancements.marbleds_first_aid.walking_er.description": "Carry all first aid items at once",
+  "advancements.marbleds_first_aid.tis_but_a_scratch.title": "Tis' But A Scratch",
+  "advancements.marbleds_first_aid.tis_but_a_scratch.description": "Heal yourself for the first time"
 }

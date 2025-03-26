@@ -1,0 +1,57 @@
+{
+  "parent": "marbledsfirstaid:marbleds_first_aid/root",
+  "criteria": {
+    "walking_er": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:pain_pills"
+            ]
+          },
+          {
+            "items": [
+              "marbledsfirstaid:bandaid"
+            ]
+          },
+          {
+            "items": [
+              "marbledsfirstaid:bandages"
+            ]
+          },
+          {
+            "items": [
+              "marbledsfirstaid:medkit"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.marbleds_first_aid.walking_er.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "marbledsfirstaid:medkit",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.marbleds_first_aid.walking_er.title"
+    }
+  },
+  "requirements": [
+    [
+      "walking_er"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

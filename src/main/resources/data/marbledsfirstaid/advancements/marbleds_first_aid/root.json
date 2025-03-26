@@ -1,0 +1,221 @@
+{
+  "criteria": {
+    "morphine": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:morphine"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "eye_drops": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:eye_drops"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "antidote": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:antidote"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "adrenaline_syringe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:adrenaline_syringe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "stimpack": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:stimpack"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "tonic": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:tonic"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "awkward_syringe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:awkward_syringe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "syringe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:syringe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "awkward_medicine_bottle": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:awkward_medicine_bottle"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "medicine_bottle": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:medicine_bottle"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cloth": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:cloth"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "bandaid": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:bandaid"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "bandages": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:bandages"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "medkit": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:medkit"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "pain_pills": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:pain_pills"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/block/red_concrete.png",
+    "description": {
+      "translate": "advancements.marbleds_first_aid.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "marbledsfirstaid:medkit",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.marbleds_first_aid.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "morphine",
+      "eye_drops",
+      "antidote",
+      "adrenaline_syringe",
+      "stimpack",
+      "tonic",
+      "awkward_syringe",
+      "syringe",
+      "awkward_medicine_bottle",
+      "medicine_bottle",
+      "cloth",
+      "bandaid",
+      "bandages",
+      "medkit",
+      "pain_pills"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
