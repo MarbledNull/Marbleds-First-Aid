@@ -41,12 +41,14 @@ public class MarbledsFirstAid
         BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Ingredient.of(new ItemStack(ModItems.MEDICINE_BOTTLE.get())), Ingredient.of(PotionUtils.setPotion(new ItemStack(Items.POTION), Potions.AWKWARD)), new ItemStack(ModItems.AWKWARD_MEDICINE_BOTTLE.get())));
         BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Ingredient.of(new ItemStack(ModItems.AWKWARD_MEDICINE_BOTTLE.get())), Ingredient.of(new ItemStack(Items.BONE_MEAL)), new ItemStack(ModItems.EYE_DROPS.get())));
         BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Ingredient.of(new ItemStack(ModItems.AWKWARD_MEDICINE_BOTTLE.get())), Ingredient.of(new ItemStack(Items.AMETHYST_SHARD)), new ItemStack(ModItems.TONIC.get())));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Ingredient.of(new ItemStack(ModItems.AWKWARD_MEDICINE_BOTTLE.get())), Ingredient.of(new ItemStack(Items.IRON_INGOT)), new ItemStack(ModItems.ANTIDOTE.get())));
+        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Ingredient.of(new ItemStack(ModItems.AWKWARD_MEDICINE_BOTTLE.get())), Ingredient.of(new ItemStack(Items.COPPER_INGOT)), new ItemStack(ModItems.ANTIDOTE.get())));
         BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Ingredient.of(new ItemStack(ModItems.AWKWARD_MEDICINE_BOTTLE.get())), Ingredient.of(new ItemStack(Items.FERMENTED_SPIDER_EYE)), new ItemStack(ModItems.MORPHINE.get())));
+        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Ingredient.of(new ItemStack(ModItems.AWKWARD_MEDICINE_BOTTLE.get())), Ingredient.of(new ItemStack(Items.IRON_INGOT)), new ItemStack(ModItems.ELIXIR.get())));
         //syringes
         BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Ingredient.of(new ItemStack(ModItems.SYRINGE.get())), Ingredient.of(PotionUtils.setPotion(new ItemStack(Items.POTION), Potions.AWKWARD)), new ItemStack(ModItems.AWKWARD_SYRINGE.get())));
         BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Ingredient.of(new ItemStack(ModItems.SYRINGE.get())), Ingredient.of(), new ItemStack(ModItems.ADRENALINE_SYRINGE.get())));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Ingredient.of(new ItemStack(ModItems.SYRINGE.get())), Ingredient.of(new ItemStack(Items.FERMENTED_SPIDER_EYE)), new ItemStack(ModItems.STIMPACK.get())));
+        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Ingredient.of(new ItemStack(ModItems.SYRINGE.get())), Ingredient.of(new ItemStack(Items.FERMENTED_SPIDER_EYE)), new ItemStack(ModItems.MORPHINE_SYRINGE.get())));
+        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(Ingredient.of(new ItemStack(ModItems.SYRINGE.get())), Ingredient.of(new ItemStack(Items.GLOWSTONE_DUST)), new ItemStack(ModItems.STIMPACK.get())));
     }
 
 
