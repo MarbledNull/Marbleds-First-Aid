@@ -27,9 +27,11 @@ public class ModItems {
     public static final RegistryObject<Item> EYE_DROPS = ITEMS.register("eye_drops", () -> new EyeDropsItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> TONIC = ITEMS.register("tonic", () -> new TonicItem(new Item.Properties().food(ModFoods.TONIC).stacksTo(1).craftRemainder(ModItems.MEDICINE_BOTTLE.get())));
     public static final RegistryObject<Item> ANTIDOTE = ITEMS.register("antidote", () -> new AntidoteItem(new Item.Properties().food(ModFoods.ANTIDOTE).stacksTo(1).craftRemainder(ModItems.MEDICINE_BOTTLE.get())));
+    public static final RegistryObject<Item> ELIXIR = ITEMS.register("elixir", () -> new ElixirItem(new Item.Properties().food(ModFoods.ELIXIR).stacksTo(1)));
     //syringes
     public static final RegistryObject<Item> STIMPACK = ITEMS.register("stimpack", () -> new StimpackItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> ADRENALINE_SYRINGE = ITEMS.register("adrenaline_syringe", () -> new AdrenalineSyringeItem(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> MORPHINE_SYRINGE = ITEMS.register("morphine_syringe", () -> new MorphineSyringeItem(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

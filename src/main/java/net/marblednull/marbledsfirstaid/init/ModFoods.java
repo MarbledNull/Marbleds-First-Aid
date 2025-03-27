@@ -9,5 +9,5 @@ public class ModFoods {
     public static final FoodProperties TONIC = new FoodProperties.Builder().nutrition(0).saturationMod(0.0f).alwaysEat().build();
     public static final FoodProperties ANTIDOTE = new FoodProperties.Builder().nutrition(0).saturationMod(0.0f).alwaysEat().build();
     public static final FoodProperties AWKWARD_MEDICINE_BOTTLE = new FoodProperties.Builder().nutrition(0).saturationMod(0.0f).alwaysEat().build();
-
+    public static final FoodProperties ELIXIR = new FoodProperties.Builder().nutrition(0).saturationMod(0.0f).alwaysEat().build();
 }
