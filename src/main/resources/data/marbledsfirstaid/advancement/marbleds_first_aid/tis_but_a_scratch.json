@@ -50,7 +50,7 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "marbledsfirstaid:bandages",
+      "id": "marbledsfirstaid:bandages",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,

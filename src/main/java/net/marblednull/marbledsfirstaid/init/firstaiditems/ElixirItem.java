@@ -11,6 +11,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
@@ -19,10 +20,10 @@ import net.minecraft.world.level.Level;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class WaterSyringeItem extends Item {
+public class ElixirItem extends Item {
     private static final int DRINK_DURATION = 40;
 
-    public WaterSyringeItem(Properties p_41346_) {
+    public ElixirItem(Properties p_41346_) {
         super(p_41346_);
     }
 
@@ -31,6 +32,12 @@ public class WaterSyringeItem extends Item {
         if (p_41350_ instanceof ServerPlayer $$3) {
             CriteriaTriggers.CONSUME_ITEM.trigger($$3, p_41348_);
             $$3.awardStat(Stats.ITEM_USED.get(this));
+        }
+
+        if (!p_41349_.isClientSide) {
+            p_41350_.removeEffect(MobEffects.WEAKNESS);
+            p_41350_.removeEffect(MobEffects.MOVEMENT_SLOWDOWN);
+            p_41350_.removeEffect(MobEffects.DIG_SLOWDOWN);
         }
 
         if (p_41348_.isEmpty()) {
@@ -57,11 +64,11 @@ public class WaterSyringeItem extends Item {
     }
 
     public SoundEvent getDrinkingSound() {
-        return SoundEvents.GENERIC_DRINK;
+        return SoundEvents.HONEY_DRINK;
     }
 
     public SoundEvent getEatingSound() {
-        return SoundEvents.GENERIC_DRINK;
+        return SoundEvents.HONEY_DRINK;
     }
 
     public InteractionResultHolder<ItemStack> use(Level p_41352_, Player p_41353_, InteractionHand p_41354_) {
@@ -71,7 +78,10 @@ public class WaterSyringeItem extends Item {
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         {
             tooltipComponents.add(CommonComponents.EMPTY);
-            tooltipComponents.add(Component.translatable("item.marbledsfirstaid.water_medicine_bottle.desc1").withStyle(ChatFormatting.GRAY));
+            tooltipComponents.add(Component.translatable("item.marbledsfirstaid.elixir.desc1").withStyle(ChatFormatting.GRAY));
+            tooltipComponents.add(CommonComponents.space().append(Component.translatable("item.marbledsfirstaid.elixir.desc2")).withStyle(ChatFormatting.BLUE));
+            tooltipComponents.add(CommonComponents.space().append(Component.translatable("item.marbledsfirstaid.elixir.desc3")).withStyle(ChatFormatting.BLUE));
+            tooltipComponents.add(CommonComponents.space().append(Component.translatable("item.marbledsfirstaid.elixir.desc4")).withStyle(ChatFormatting.BLUE));
         }
     }
 }

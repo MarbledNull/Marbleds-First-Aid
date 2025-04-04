@@ -37,7 +37,7 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "marbledsfirstaid:medkit",
+      "id": "marbledsfirstaid:medkit",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,

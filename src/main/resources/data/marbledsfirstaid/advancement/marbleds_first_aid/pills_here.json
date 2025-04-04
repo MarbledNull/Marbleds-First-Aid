@@ -22,7 +22,7 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "marbledsfirstaid:pain_pills",
+      "id": "marbledsfirstaid:pain_pills",
       "nbt": "{Damage:0}"
     },
     "show_toast": true,
