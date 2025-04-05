@@ -1,0 +1,73 @@
+{
+  "parent": "marbledsfirstaid:marbleds_first_aid/root",
+  "criteria": {
+    "bandages": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "marbledsfirstaid:bandages"
+          ]
+        }
+      }
+    },
+    "pain_pills": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "marbledsfirstaid:pain_pills"
+          ]
+        }
+      }
+    },
+    "bandaid": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "marbledsfirstaid:bandaid"
+          ]
+        }
+      }
+    },
+    "medkit": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "marbledsfirstaid:medkit"
+          ]
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.marbleds_first_aid.tis_but_a_scratch.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "id": "marbledsfirstaid:bandages",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.marbleds_first_aid.tis_but_a_scratch.title"
+    }
+  },
+  "requirements": [
+    [
+      "bandages",
+      "pain_pills",
+      "bandaid",
+      "medkit"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

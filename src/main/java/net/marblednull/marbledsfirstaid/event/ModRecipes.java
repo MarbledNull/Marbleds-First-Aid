@@ -15,7 +15,17 @@ import net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent;
 public class ModRecipes {
     @SubscribeEvent
     public static void registerBrewingRecipes(RegisterBrewingRecipesEvent event) {
+        //medicines
         event.getBuilder().addRecipe(Ingredient.of(ModItems.MEDICINE_BOTTLE), Ingredient.of(PotionContents.createItemStack(Items.POTION, Potions.AWKWARD).getItem()), new ItemStack(ModItems.AWKWARD_MEDICINE_BOTTLE.get()));
-
+        event.getBuilder().addRecipe(Ingredient.of(ModItems.AWKWARD_MEDICINE_BOTTLE), Ingredient.of(Items.BONE_MEAL), new ItemStack(ModItems.EYE_DROPS.get()));
+        event.getBuilder().addRecipe(Ingredient.of(ModItems.AWKWARD_MEDICINE_BOTTLE), Ingredient.of(Items.AMETHYST_SHARD), new ItemStack(ModItems.TONIC.get()));
+        event.getBuilder().addRecipe(Ingredient.of(ModItems.AWKWARD_MEDICINE_BOTTLE), Ingredient.of(Items.COPPER_INGOT), new ItemStack(ModItems.ANTIDOTE.get()));
+        event.getBuilder().addRecipe(Ingredient.of(ModItems.AWKWARD_MEDICINE_BOTTLE), Ingredient.of(Items.FERMENTED_SPIDER_EYE), new ItemStack(ModItems.MORPHINE.get()));
+        event.getBuilder().addRecipe(Ingredient.of(ModItems.AWKWARD_MEDICINE_BOTTLE), Ingredient.of(Items.IRON_INGOT), new ItemStack(ModItems.ELIXIR.get()));
+        //syringes
+        event.getBuilder().addRecipe(Ingredient.of(ModItems.SYRINGE), Ingredient.of(PotionContents.createItemStack(Items.POTION, Potions.AWKWARD).getItem()), new ItemStack(ModItems.AWKWARD_SYRINGE.get()));
+        event.getBuilder().addRecipe(Ingredient.of(ModItems.AWKWARD_SYRINGE), Ingredient.of(Items.RABBIT_FOOT), new ItemStack(ModItems.ADRENALINE_SYRINGE.get()));
+        event.getBuilder().addRecipe(Ingredient.of(ModItems.AWKWARD_SYRINGE), Ingredient.of(Items.FERMENTED_SPIDER_EYE), new ItemStack(ModItems.MORPHINE_SYRINGE.get()));
+        event.getBuilder().addRecipe(Ingredient.of(ModItems.AWKWARD_SYRINGE), Ingredient.of(Items.GLOWSTONE_DUST), new ItemStack(ModItems.STIMPACK.get()));
     }
 }

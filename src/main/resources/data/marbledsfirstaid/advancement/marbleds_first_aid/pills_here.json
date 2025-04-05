@@ -1,0 +1,42 @@
+{
+  "parent": "marbledsfirstaid:marbleds_first_aid/root",
+  "criteria": {
+    "pain_pills": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "marbledsfirstaid:pain_pills"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.marbleds_first_aid.pills_here.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "id": "marbledsfirstaid:pain_pills",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.marbleds_first_aid.pills_here.title"
+    }
+  },
+  "requirements": [
+    [
+      "pain_pills"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

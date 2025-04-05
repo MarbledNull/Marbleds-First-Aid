@@ -30,8 +30,12 @@ public class ModTabs {
                 output.accept(ModItems.EYE_DROPS.get());
                 output.accept(ModItems.ANTIDOTE.get());
                 output.accept(ModItems.TONIC.get());
-                output.accept(ModItems.STIMPACK.get());
+                output.accept(ModItems.ELIXIR.get());
+                output.accept(ModItems.SYRINGE.get());
+                output.accept(ModItems.AWKWARD_SYRINGE.get());
                 output.accept(ModItems.ADRENALINE_SYRINGE.get());
+                output.accept(ModItems.MORPHINE_SYRINGE.get());
+                output.accept(ModItems.STIMPACK.get());
             })
             .build()
     );
