@@ -16,12 +16,11 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
-public class AdrenalinesSyringeItem extends Item {
+public class AdrenalineSyringeItem extends Item {
 
-    public AdrenalinesSyringeItem(Properties p_41346_) {
+    public AdrenalineSyringeItem(Properties p_41346_) {
         super(p_41346_);
     }
 
