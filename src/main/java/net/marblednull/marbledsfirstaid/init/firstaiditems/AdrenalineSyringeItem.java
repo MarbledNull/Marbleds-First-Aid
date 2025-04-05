@@ -18,9 +18,9 @@ import net.minecraft.world.level.Level;
 
 import java.util.List;
 
-public class AdrenalinesSyringeItem extends Item {
+public class AdrenalineSyringeItem extends Item {
 
-    public AdrenalinesSyringeItem(Properties p_41346_) {
+    public AdrenalineSyringeItem(Properties p_41346_) {
         super(p_41346_);
     }
 
