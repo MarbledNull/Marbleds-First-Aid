@@ -33,7 +33,7 @@ public class ModItems {
     public static final DeferredItem<Item> EYE_DROPS = ITEMS.registerItem("eye_drops", EyeDropsItem::new, new Item.Properties().useCooldown(1));
     public static final DeferredItem<Item> TONIC = ITEMS.registerItem("tonic", TonicItem::new, new Item.Properties().food(new FoodProperties.Builder().build()));
     public static final DeferredItem<Item> ANTIDOTE = ITEMS.registerItem("antidote", AntidoteItem::new, new Item.Properties());
-    public static final DeferredItem<Item> ELIXIR = ITEMS.registerItem("elixir", Item::new, new Item.Properties());
+    public static final DeferredItem<Item> ELIXIR = ITEMS.registerItem("elixir", ElixirItem::new, new Item.Properties());
     //syringes
     public static final DeferredItem<Item> STIMPACK = ITEMS.registerItem("stimpack", StimpackItem::new, new Item.Properties().useCooldown(5f));
     public static final DeferredItem<Item> ADRENALINE_SYRINGE = ITEMS.registerItem("adrenaline_syringe", AdrenalineSyringeItem::new, new Item.Properties().useCooldown(5f));
