@@ -1,6 +1,5 @@
 package net.marblednull.marbledsfirstaid.init;
 
-import com.mojang.brigadier.LiteralMessage;
 import net.marblednull.marbledsfirstaid.MarbledsFirstAid;
 import net.marblednull.marbledsfirstaid.init.firstaiditems.*;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -32,7 +31,7 @@ public class ModItems {
     public static final DeferredItem<Item> ELIXIR = ITEMS.registerItem("elixir", ElixirItem::new,new Item.Properties().food(new FoodProperties.Builder().alwaysEdible().build()));
     //syringes
     public static final DeferredItem<Item> STIMPACK = ITEMS.registerItem("stimpack", StimpackItem::new, new Item.Properties().food(new FoodProperties.Builder().build()));
-    public static final DeferredItem<Item> ADRENALINE_SYRINGE = ITEMS.registerItem("adrenaline_syringe", AdrenalinesSyringeItem::new, new Item.Properties());
+    public static final DeferredItem<Item> ADRENALINE_SYRINGE = ITEMS.registerItem("adrenaline_syringe", AdrenalineSyringeItem::new, new Item.Properties());
     public static final DeferredItem<Item> MORPHINE_SYRINGE = ITEMS.registerItem("morphine_syringe", MorphineSyringeItem::new, new Item.Properties());
 
     public static void register(IEventBus eventBus) {
