@@ -4,6 +4,7 @@ import net.marblednull.marbledsfirstaid.event.ModSounds;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -11,30 +12,25 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.gameevent.GameEvent;
 
 import java.util.List;
 
 public class BandaidItem extends Item {
 
-    public BandaidItem(Properties p_41346_) {
-        super(p_41346_);
+    public BandaidItem(Properties properties) {
+        super(properties);
     }
 
     @Override
     public InteractionResult use(Level level, Player player, InteractionHand hand) {
-        player.playSound(ModSounds.BANDAGES.get(), 1.0F, 1.0F);
+        play(level, player);
         return ItemUtils.startUsingInstantly(level, player, hand);
-    }
-
-    @Override
-    public boolean releaseUsing(ItemStack stack, Level level, LivingEntity entity, int timeLeft) {
-        return false;
     }
 
     @Override
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
         if (!level.isClientSide && entity instanceof Player player) {
-            //player.getCooldowns().addCooldown(this, 20);
             player.heal(4f);
             player.awardStat(Stats.ITEM_USED.get(this));
             if (!player.getAbilities().instabuild) {
@@ -50,6 +46,11 @@ public class BandaidItem extends Item {
 
     public int getUseDuration(ItemStack stack, LivingEntity entity) {
         return 30;
+    }
+
+    private static void play(Level level, Player player) {
+        level.playSound(player, player, ModSounds.BANDAGES.get(), SoundSource.PLAYERS, 1.0F, 1.0F);
+        level.gameEvent(GameEvent.ITEM_INTERACT_START, player.position(), GameEvent.Context.of(player));
     }
 
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {

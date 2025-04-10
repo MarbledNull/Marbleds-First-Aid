@@ -68,5 +68,11 @@
   "advancements.marbleds_first_aid.walking_er.title": "Walking ER",
   "advancements.marbleds_first_aid.walking_er.description": "Carry all first aid items at once",
   "advancements.marbleds_first_aid.tis_but_a_scratch.title": "Tis' But A Scratch",
-  "advancements.marbleds_first_aid.tis_but_a_scratch.description": "Heal yourself for the first time"
+  "advancements.marbleds_first_aid.tis_but_a_scratch.description": "Heal yourself for the first time",
+
+  "sounds.marbledsfirstaid.medkit": "Applying Medkit",
+  "sounds.marbledsfirstaid.syringe": "Injecting syringe",
+  "sounds.marbledsfirstaid.bandages": "Applying Bandages",
+  "sounds.marbledsfirstaid.eye_drops": "Applying Eye Drops",
+  "sounds.marbledsfirstaid.pain_pills": "Consuming Pain Pills"
 }
