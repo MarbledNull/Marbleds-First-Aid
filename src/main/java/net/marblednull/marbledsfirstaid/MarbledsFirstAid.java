@@ -1,8 +1,8 @@
 package net.marblednull.marbledsfirstaid;
 
+import net.marblednull.marbledsfirstaid.events.ModSounds;
 import net.marblednull.marbledsfirstaid.init.ModItems;
 import net.marblednull.marbledsfirstaid.init.ModTabs;
-import net.marblednull.marbledsfirstaid.sound.ModSounds;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.PotionUtils;

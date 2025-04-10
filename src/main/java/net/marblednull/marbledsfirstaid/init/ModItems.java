@@ -14,7 +14,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> CLOTH = ITEMS.register("cloth", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MEDICINE_BOTTLE = ITEMS.register("medicine_bottle", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> AWKWARD_MEDICINE_BOTTLE = ITEMS.register("awkward_medicine_bottle", () -> new AwkwardMedicineBottleItem(new Item.Properties().food(ModFoods.AWKWARD_MEDICINE_BOTTLE).craftRemainder(ModItems.MEDICINE_BOTTLE.get())));
+    public static final RegistryObject<Item> AWKWARD_MEDICINE_BOTTLE = ITEMS.register("awkward_medicine_bottle", () -> new Item(new Item.Properties().food(ModFoods.AWKWARD_MEDICINE_BOTTLE).craftRemainder(ModItems.MEDICINE_BOTTLE.get())));
     public static final RegistryObject<Item> SYRINGE = ITEMS.register("syringe", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> AWKWARD_SYRINGE = ITEMS.register("awkward_syringe", () -> new Item(new Item.Properties()));
     //first aid items

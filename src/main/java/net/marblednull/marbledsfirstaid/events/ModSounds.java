@@ -1,4 +1,4 @@
-package net.marblednull.marbledsfirstaid.sound;
+package net.marblednull.marbledsfirstaid.events;
 
 import net.marblednull.marbledsfirstaid.MarbledsFirstAid;
 import net.minecraft.resources.ResourceLocation;
@@ -13,7 +13,7 @@ public class ModSounds {
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, MarbledsFirstAid.MODID);
 
     public static final RegistryObject<SoundEvent> MEDKIT = registerSoundEvents("medkit");
-    public static final RegistryObject<SoundEvent> STIM = registerSoundEvents("stim");
+    public static final RegistryObject<SoundEvent> SYRINGE = registerSoundEvents("syringe");
     public static final RegistryObject<SoundEvent> BANDAGES = registerSoundEvents("bandages");
     public static final RegistryObject<SoundEvent> EYE_DROPS = registerSoundEvents("eye_drops");
     public static final RegistryObject<SoundEvent> PAIN_PILLS = registerSoundEvents("pain_pills");
