@@ -17,14 +17,12 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 public class ElixirItem extends Item {
-    private static final int DRINK_DURATION = 40;
 
-    public ElixirItem(Properties p_41346_) {
-        super(p_41346_);
+    public ElixirItem(Properties properties) {
+        super(properties);
     }
 
     public ItemStack finishUsingItem(ItemStack p_41348_, Level p_41349_, LivingEntity p_41350_) {
@@ -33,13 +31,11 @@ public class ElixirItem extends Item {
             CriteriaTriggers.CONSUME_ITEM.trigger($$3, p_41348_);
             $$3.awardStat(Stats.ITEM_USED.get(this));
         }
-
         if (!p_41349_.isClientSide) {
             p_41350_.removeEffect(MobEffects.WEAKNESS);
             p_41350_.removeEffect(MobEffects.MOVEMENT_SLOWDOWN);
             p_41350_.removeEffect(MobEffects.DIG_SLOWDOWN);
         }
-
         if (p_41348_.isEmpty()) {
             return new ItemStack(ModItems.MEDICINE_BOTTLE.get());
         } else {
@@ -50,7 +46,6 @@ public class ElixirItem extends Item {
                     $$5.drop($$4, false);
                 }
             }
-
             return p_41348_;
         }
     }
@@ -59,7 +54,7 @@ public class ElixirItem extends Item {
         return 40;
     }
 
-    public UseAnim getUseAnimation(ItemStack p_41358_) {
+    public UseAnim getUseAnimation(ItemStack stack) {
         return UseAnim.DRINK;
     }
 
@@ -67,12 +62,8 @@ public class ElixirItem extends Item {
         return SoundEvents.HONEY_DRINK;
     }
 
-    public SoundEvent getEatingSound() {
-        return SoundEvents.HONEY_DRINK;
-    }
-
-    public InteractionResultHolder<ItemStack> use(Level p_41352_, Player p_41353_, InteractionHand p_41354_) {
-        return ItemUtils.startUsingInstantly(p_41352_, p_41353_, p_41354_);
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+        return ItemUtils.startUsingInstantly(level, player, hand);
     }
 
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {

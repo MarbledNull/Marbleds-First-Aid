@@ -15,8 +15,8 @@ public class ModSounds {
             "medkit",
             () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("marbledsfirstaid", "medkit"))
     );
-    public static final DeferredHolder<SoundEvent, SoundEvent> STIM = SOUND_EVENTS.register(
-            "stim",
+    public static final DeferredHolder<SoundEvent, SoundEvent> SYRINGE = SOUND_EVENTS.register(
+            "syringe",
             () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("marbledsfirstaid", "stim"))
     );
     public static final DeferredHolder<SoundEvent, SoundEvent> BANDAGES = SOUND_EVENTS.register(

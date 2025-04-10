@@ -16,35 +16,31 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 public class MorphineItem extends Item {
-    private static final int DRINK_DURATION = 40;
 
-    public MorphineItem(Properties p_41346_) {
-        super(p_41346_);
+    public MorphineItem(Properties properties) {
+        super(properties);
     }
 
-    public ItemStack finishUsingItem(ItemStack p_41348_, Level p_41349_, LivingEntity p_41350_) {
-        super.finishUsingItem(p_41348_, p_41349_, p_41350_);
-        if (p_41350_ instanceof ServerPlayer $$3) {
-            CriteriaTriggers.CONSUME_ITEM.trigger($$3, p_41348_);
+    public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
+        super.finishUsingItem(stack, level, entity);
+        if (entity instanceof ServerPlayer $$3) {
+            CriteriaTriggers.CONSUME_ITEM.trigger($$3, stack);
             $$3.awardStat(Stats.ITEM_USED.get(this));
         }
-
-        if (p_41348_.isEmpty()) {
+        if (stack.isEmpty()) {
             return new ItemStack(ModItems.MEDICINE_BOTTLE.get());
         } else {
-            if (p_41350_ instanceof Player && !((Player)p_41350_).getAbilities().instabuild) {
+            if (entity instanceof Player && !((Player)entity).getAbilities().instabuild) {
                 ItemStack $$4 = new ItemStack(ModItems.MEDICINE_BOTTLE.get());
-                Player $$5 = (Player)p_41350_;
+                Player $$5 = (Player)entity;
                 if (!$$5.getInventory().add($$4)) {
                     $$5.drop($$4, false);
                 }
             }
-
-            return p_41348_;
+            return stack;
         }
     }
 
@@ -52,7 +48,7 @@ public class MorphineItem extends Item {
         return 40;
     }
 
-    public UseAnim getUseAnimation(ItemStack p_41358_) {
+    public UseAnim getUseAnimation(ItemStack stack) {
         return UseAnim.DRINK;
     }
 
@@ -60,12 +56,8 @@ public class MorphineItem extends Item {
         return SoundEvents.HONEY_DRINK;
     }
 
-    public SoundEvent getEatingSound() {
-        return SoundEvents.HONEY_DRINK;
-    }
-
-    public InteractionResultHolder<ItemStack> use(Level p_41352_, Player p_41353_, InteractionHand p_41354_) {
-        return ItemUtils.startUsingInstantly(p_41352_, p_41353_, p_41354_);
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+        return ItemUtils.startUsingInstantly(level, player, hand);
     }
 
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
