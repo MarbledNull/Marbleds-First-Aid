@@ -19,8 +19,8 @@ import java.util.List;
 
 public class BandagesItem extends Item {
 
-    public BandagesItem(Properties p_41346_) {
-        super(p_41346_);
+    public BandagesItem(Properties properties) {
+        super(properties);
     }
 
     @Override
@@ -42,11 +42,11 @@ public class BandagesItem extends Item {
         return stack;
     }
 
-    public UseAnim getUseAnimation(ItemStack p_41358_) {
+    public UseAnim getUseAnimation(ItemStack stack) {
         return UseAnim.BOW;
     }
 
-    public int getUseDuration(ItemStack p_41360_) {
+    public int getUseDuration(ItemStack stack) {
         return 30;
     }
 
@@ -55,11 +55,11 @@ public class BandagesItem extends Item {
         level.gameEvent(GameEvent.ITEM_INTERACT_START, player.position(), GameEvent.Context.of(player));
     }
 
-    public void appendHoverText(ItemStack p_41211_, @Nullable Level p_41212_, List<Component> p_41213_, TooltipFlag p_41214_) {
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         {
-            p_41213_.add(CommonComponents.EMPTY);
-            p_41213_.add(Component.translatable("item.marbledsfirstaid.bandages.desc1").withStyle(ChatFormatting.GRAY));
-            p_41213_.add(CommonComponents.space().append(Component.translatable("item.marbledsfirstaid.bandages.desc2")).withStyle(ChatFormatting.BLUE));
+            tooltipComponents.add(CommonComponents.EMPTY);
+            tooltipComponents.add(Component.translatable("item.marbledsfirstaid.whenused.desc1").withStyle(ChatFormatting.GRAY));
+            tooltipComponents.add(CommonComponents.space().append(Component.translatable("item.marbledsfirstaid.bandages.desc1")).withStyle(ChatFormatting.BLUE));
         }
     }
 }
